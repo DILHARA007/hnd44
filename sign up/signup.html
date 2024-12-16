@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <h1>FIELD MART</h1>
+    <p>You are signing up to Sri Lanka's number one online platform for sellers and retailers</p>
+    <button id="openSignupBtn" class="container "> Continue Sign Up process</button>
+  </div>
+
+  <!-- Sign-up Pop-up -->
+  <div id="signupPopup" class="popup">
+    <div class="popup-content">
+      <button class="close-btn">&times;</button>
+      <h1>Sign Up</h1>
+      <form action="../email verification/verification.html" method="get">
+        <div class="user-type">
+          <label>
+            <input type="radio" name="userType" value="seller">
+            Seller
+          </label>
+          <label>
+            <input type="radio" name="userType" value="buyer" checked>
+            Buyer
+          </label>
+          <label>
+            <input type="radio" name="userType" value="both">
+            Both
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password" required>
+        </div>
+
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+        </div>
+
+        <button type="submit" class="signup-btn">Sign Up</button>
+
+        <p class="or-text">or</p>
+
+        <div class="social-login">
+          <button class="google-btn">Sign Up with Google</button>
+          <button class="facebook-btn">Sign Up with Facebook</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

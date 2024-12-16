@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FieldMart - Bid Request</title>
+  <link rel="stylesheet" href="acc rej 3.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">FieldMart</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#" class="active">Seller</a></li>
+        <li><a href="#">Buyer</a></li>
+      </ul>
+      <div class="auth-links">
+        <button id="signInBtn">Sign In</button>
+        <button id="signUpBtn">Sign Up</button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="bidDetails">
+      <h1>Bidding Request</h1>
+      <div class="item-details">
+        <p><strong>Item ID:</strong> 25548</p>
+        <p><strong>Item Name:</strong> Carrot</p>
+        <p><strong>Quantity:</strong> 15 kg</p>
+        <p><strong>Actual Price:</strong> Rs.250/=</p>
+        <p><strong>Bidding Price:</strong> Rs.200/=</p>
+        <p><strong>Bidden By:</strong> Mr. Perera</p>
+      </div>
+    </section>
+    <section id="actionSection">
+      <h2>Do You Accept the Bid Request?</h2>
+      <label>
+        <input type="radio" name="acceptBid" value="yes" checked> Yes
+      </label>
+      <label>
+        <input type="radio" name="acceptBid" value="no"> No
+      </label>
+      <div id="dynamicContent">
+        <!-- Default content (Yes - Accept Bid) will load here -->
+      </div>
+    </section>
+  </main>
+  <script src="acc rej 3.js"></script>
+</body>
+</html>

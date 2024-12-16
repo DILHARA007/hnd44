@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Field Mart - Orders Received</title>
+  <link rel="stylesheet" href="ordersR.css">
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <div class="logo">Field Mart</div>
+    <nav class="nav">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Seller</a>
+      <a href="#">Buyer</a>
+      <a href="#" class="signin">Sign In</a>
+      <a href="#" class="signup">Sign Up</a>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1 class="title">My Orders Received</h1>
+    <div class="table-container">
+      <table class="orders-table">
+        <thead>
+          <tr>
+            <th>Item ID</th>
+            <th>Name</th>
+            <th>Stock</th>
+            <th>Orders</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">25548</td>
+            <td>Carrot</td>
+            <td>20kg</td>
+            <td>15kg</td>
+            <td>Rs 20,000/=</td>
+          </tr>
+          <tr>
+            <td>Leeks</td>
+            <td>35kg</td>
+            <td>30kg</td>
+            <td>Rs 45,000/=</td>
+          </tr>
+          <tr>
+            <td rowspan="2">25549</td>
+            <td>Beans</td>
+            <td>55kg</td>
+            <td>30kg</td>
+            <td>Rs 60,000/=</td>
+          </tr>
+          <tr>
+            <td>Beetroot</td>
+            <td>60kg</td>
+            <td>30kg</td>
+            <td>Rs 55,000/=</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <script src="ordersR.js"></script>
+</body>
+</html>

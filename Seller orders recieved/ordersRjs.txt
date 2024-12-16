@@ -1,0 +1,53 @@
+// DOM Elements
+const ordersTableBody = document.querySelector('.orders-table tbody');
+
+// Fetch Orders Data
+async function fetchOrders() {
+  try {
+    const response = await fetch('ordersR.php');
+    const data = await response.json();
+
+    if (data.error) {
+      ordersTableBody.innerHTML = `<tr><td colspan="5">${data.error}</td></tr>`;
+      return;
+    }
+
+    // Clear existing rows
+    ordersTableBody.innerHTML = '';
+
+    // Populate table with orders
+    let currentItemId = null;
+    data.forEach(order => {
+      if (currentItemId !== order.item_id) {
+        currentItemId = order.item_id;
+
+        // Create a row for the first item in the group
+        ordersTableBody.innerHTML += `
+          <tr>
+            <td rowspan="2">${order.item_id}</td>
+            <td>${order.product_name}</td>
+            <td>${order.stock_available}kg</td>
+            <td>${order.ordered_quantity}kg</td>
+            <td>Rs ${order.price.toFixed(2)}/=</td>
+          </tr>
+        `;
+      } else {
+        // Create additional rows for grouped items
+        ordersTableBody.innerHTML += `
+          <tr>
+            <td>${order.product_name}</td>
+            <td>${order.stock_available}kg</td>
+            <td>${order.ordered_quantity}kg</td>
+            <td>Rs ${order.price.toFixed(2)}/=</td>
+          </tr>
+        `;
+      }
+    });
+  } catch (error) {
+    console.error('Error fetching orders:', error);
+    ordersTableBody.innerHTML = '<tr><td colspan="5">Failed to load orders.</td></tr>';
+  }
+}
+
+// Load orders on page load
+fetchOrders();

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Field Mart - My Selling Items</title>
+  <link rel="stylesheet" href="mySItems.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">Field Mart</div>
+    <nav class="nav">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Seller</a>
+      <a href="#">Buyer</a>
+      <a href="#" class="signin">Sign In</a>
+      <a href="#" class="signup">Sign Up</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <ul>
+        <li><a href="#">My Selling Items</a></li>
+        <li><a href="#">Orders Received</a></li>
+        <li><a href="#">Bidding Request</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Section -->
+    <section class="main-content">
+      <h1>My Selling Items</h1>
+      <button class="sell-item-btn">+ Sell Item</button>
+      <div class="item-card">
+        <img src="samba-rice.jpg" alt="Samba Rice">
+        <div class="item-info">
+          <h2>Samba Rice</h2>
+          <p>Item ID: S2233</p>
+          <p>Item Name: Rice</p>
+          <p>Stock: 30 KG</p>
+          <p>Ordered: 60/170</p>
+          <p>Delivered: 10/120</p>
+          <p>Price: Rs 40,000 /-</p>
+        </div>
+        <div class="item-actions">
+          <button class="btn">Biden Request</button>
+          <button class="btn">Orders Received</button>
+        </div>
+      </div>
+      <div class="item-card">
+        <img src="basmati-rice.jpg" alt="Basmati Rice">
+        <div class="item-info">
+          <h2>Basmati Rice</h2>
+          <p>Item ID: S2233</p>
+          <p>Item Name: Rice</p>
+          <p>Stock: 12 KG</p>
+          <p>Ordered: 62/170</p>
+          <p>Delivered: 10/120</p>
+          <p>Price: Rs 50,000 /-</p>
+        </div>
+        <div class="item-actions">
+          <button class="btn">Biden Request</button>
+          <button class="btn">Orders Received</button>
+        </div>
+      </div>
+      <div id="item-list">
+        <!-- Selling Items will be dynamically loaded here -->
+      </div>
+    </section>
+  </div>
+
+  <script src="mySItems.js"></script>
+</body>
+</html>

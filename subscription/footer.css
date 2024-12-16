@@ -1,0 +1,74 @@
+
+/* Footer styling */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 10px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-column h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #ffa500;
+}
+
+.footer-column p, .footer-column ul {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+}
+
+.footer-column ul a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.footer-column ul a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    filter: brightness(0) invert(1);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+/*
+/////////////////////////////////////////// */
+
+
+ul li a {
+    text-decoration: none;
+    font-weight: normal; /* Default font weight for all links */
+    color: #000; /* Default color for all links */
+  }
+  
+  ul li a.active {
+    font-weight: bold; /* Make "Home" bold */
+    color: #333; /* Optional: Darker color for emphasis */
+  }
+  
+  

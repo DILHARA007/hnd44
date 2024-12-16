@@ -1,0 +1,46 @@
+// DOM Elements
+const sellItemBtn = document.getElementById('sell-item-btn');
+const itemList = document.getElementById('item-list');
+
+// Navigate to Add Selling Item Page
+sellItemBtn.addEventListener('click', () => {
+  window.location.href = 'addListing.html'; // Redirect to Add Selling Item Page
+});
+
+// Fetch Selling Items from the Database
+async function fetchSellingItems() {
+  try {
+    const response = await fetch('mySItems.php');
+    const items = await response.json();
+
+    if (items.error) {
+      itemList.innerHTML = `<p>${items.error}</p>`;
+      return;
+    }
+
+    // Populate Selling Items
+    itemList.innerHTML = items.map(item => `
+      <div class="item-card">
+        <img src="${item.image_url}" alt="${item.item_name}">
+        <div class="item-info">
+          <h2>${item.item_name}</h2>
+          <p><strong>Item ID:</strong> ${item.item_id}</p>
+          <p><strong>Stock:</strong> ${item.stock} ${item.unit}</p>
+          <p><strong>Ordered:</strong> ${item.ordered}/${item.total_stock}</p>
+          <p><strong>Delivered:</strong> ${item.delivered}/${item.total_delivered}</p>
+          <p><strong>Price:</strong> Rs ${item.price} /-</p>
+        </div>
+        <div class="item-actions">
+          <button class="btn">Bidding Request</button>
+          <button class="btn">Orders Received</button>
+        </div>
+      </div>
+    `).join('');
+  } catch (error) {
+    console.error('Error fetching selling items:', error);
+    itemList.innerHTML = '<p>Failed to load selling items.</p>';
+  }
+}
+
+// Load Selling Items on Page Load
+fetchSellingItems();

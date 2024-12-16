@@ -1,0 +1,163 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sign In button styling */
+.auth-btn.sign-in {
+    background-color: white;
+    color: #ffa500;
+}
+
+.auth-btn.sign-in:hover {
+    background-color: #d9540dea;
+    color: white;
+}
+
+/* Sign Up button styling */
+.auth-btn.sign-up {
+    background-color: #ffa500;
+    color: white;
+}
+
+.auth-btn.sign-up:hover {
+    background-color: white;
+    color: #ffa500;
+}
+
+
+/* Center Section Styling */
+.center-section {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+    gap: 20px; /* Space between the search bar and navbar */
+    margin-top: 20px; /* Optional: Adjust spacing from the top */
+}
+
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Space between links */
+    font-size: 16px; /* Reduced font size for a more standard look */
+    font-weight: bold;
+}
+
+.navbar a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar a:hover {
+    color: white;
+    background-color: #ffa500;
+    border-radius: 5px;
+}
+
+/* Search Bar Styling */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    border-radius: 25px;
+    padding: 5px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}
+
+.search-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 20px;
+    color: #333;
+}
+
+.search-bar button {
+    background-color: #ffa500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #ff8800;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* General styles for header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffa500;
+    color: white;
+}
+
+.logo img {
+    height: 100px;
+    gap: 2px;
+}
+
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* Styles for authentication buttons */
+.auth-links {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/*
+///////////////////////////*/
+
+ul li a {
+    text-decoration: none;
+    font-weight: normal; /* Default font weight for all links */
+    color: #000; /* Default color for all links */
+  }
+  
+  ul li a.active {
+    font-weight: bold; /* Make "Home" bold */
+    color: #333; /* Optional: Darker color for emphasis */
+  }
+  

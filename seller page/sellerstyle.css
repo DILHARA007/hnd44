@@ -1,0 +1,715 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9aa00;
+  padding: 10px 20px;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.navbar .auth-buttons a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: linear-gradient(to right, #f6b622d1,#f4d55d, #f9f293);
+}
+
+.hero-banner {
+  background-color: #e3e3e3;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid #d6d6d6; /* Outline for Hero Section */
+  text-align: center;
+}
+
+.hero-banner h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  
+}
+
+.hero-banner p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Seller Details Section */
+.seller-details {
+  background-color: #fff;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  outline: 2px solid #d6d6d6; /* Fixed Outline */
+}
+
+/* Seller Form */
+.seller-form {
+  max-width: 400px;
+  margin: auto;
+}
+
+.seller-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.seller-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.edit-button {
+  background-color: #d9534f;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.ok-button {
+  background-color: #5cb85c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Action Buttons */
+.action-button {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.action-button {
+  background-color: #fff;
+  color: #0b0b0b;
+  border-radius: 0;
+  padding: 15px 30px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  
+}
+
+/* Action Buttons */
+.action-button {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.action-button button {
+  background-color: orange; /* Button background color */
+  color: white; /* Text color */
+  border: 2px solid #ff8c00; /* Border color matching or complementing the background */
+  padding: 15px 30px;
+  border-radius: 4px; /* Slightly rounded corners */
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.action-button button:hover {
+  background-color: #ff0000; /* Darker shade on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer .newsletter input {
+  padding: 10px;
+  width: 200px;
+  margin-top: 10px;
+}
+
+.footer .newsletter button {
+  background-color: #f9aa00;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffa500;
+  color: white;
+}
+
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+/* Sign In button styling */
+.auth-btn.sign-in {
+  background-color: white;
+  color: #ffa500;
+}
+
+.auth-btn.sign-in:hover {
+  background-color: #d9540dea;
+  color: white;
+}
+
+/* Sign Up button styling */
+.auth-btn.sign-up {
+  background-color: #ffa500;
+  color: white;
+}
+
+.auth-btn.sign-up:hover {
+  background-color: white;
+  color: #ffa500;
+}
+/* Enhanced Search Bar Styling */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  border-radius: 25px;
+  padding: 5px 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto; /* Center the search bar if needed */
+}
+
+.search-bar input {
+  flex: 1; /* Takes available space */
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 20px;
+  color: #333;
+}
+
+.search-bar button {
+  background-color: #ffa500;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.search-bar button:hover {
+  background-color: #ff8800;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Space between links */
+  font-size: 18px; /* Matching font size */
+  font-weight: bold;
+}
+
+.navbar a {
+  color: #333;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar a:hover {
+  color: white;
+  background-color: #ffa500;
+  border-radius: 5px;
+}
+
+/* Search Bar Positioning */
+.center-section {
+  display: flex;
+  align-items: center;
+  gap: 40px; /* Space between navbar and search bar */
+}
+
+/* Search Bar Styling (same as before) */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  border-radius: 25px;
+  padding: 5px 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 20px;
+  color: #333;
+}
+
+.search-bar button {
+  background-color: #ffa500;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.search-bar button:hover {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Center Section Styling */
+.center-section {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center elements horizontally */
+  gap: 20px; /* Space between the search bar and navbar */
+  margin-top: 20px; /* Optional: Adjust spacing from the top */
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: center; /* Center navigation links */
+  gap: 30px; /* Space between links */
+  font-size: 18px; /* Matching font size */
+  font-weight: bold;
+}
+
+.navbar a {
+  color: #333;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar a:hover {
+  color: white;
+  background-color: #ffa500;
+  border-radius: 5px;
+}
+
+/* Search Bar Styling */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  border-radius: 25px;
+  padding: 5px 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 20px;
+  color: #333;
+}
+
+.search-bar button {
+  background-color: #ffa500;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.search-bar button:hover {
+  background-color: #ff8800;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Header styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px; /* Reduced padding to make the header shorter */
+  background-color: #ffa500;
+  color: white;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Space between links */
+  font-size: 16px; /* Reduced font size for a more standard look */
+  font-weight: bold;
+}
+
+.navbar a {
+  color: #333;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar a:hover {
+  color: white;
+  background-color: #ffa500;
+  border-radius: 5px;
+}
+
+/* Search Bar Styling */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  border-radius: 25px;
+  padding: 5px 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 20px;
+  color: #333;
+}
+
+.search-bar button {
+  background-color: #ffa500;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.search-bar button:hover {
+  background-color: #ff8800;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Hero styling */
+.hero {
+  padding: 50px 20px;
+  background: linear-gradient(to right, #f6b622d1,#f4d55d, #f9f293);
+  text-align: center;
+}
+
+/* Styling for the buttons container in the hero section */
+.hero-buttons {
+  display: flex; /* Align buttons in a row */
+  justify-content: center; /* Center the buttons */
+  gap: 15px; /* Add space between the buttons */
+  margin-top: 20px; /* Add some spacing above the buttons */
+}
+
+/* General button styling */
+.hero-buttons button {
+  background-color: #ffa500;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for buttons */
+.hero-buttons button:hover {
+  background-color: #c3881bc8;
+}
+
+
+/* Product grid styling */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 20px;
+}
+
+.product-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 350px;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.product-info {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #777;
+}
+
+.cart-btn {
+  background-color: #ffa500;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.cart-btn:hover {
+  background-color: #c3881bc8;
+}
+
+/* Footer styling */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 10px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-column h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #ffa500;
+}
+
+.footer-column p, .footer-column ul {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 5px;
+}
+
+.footer-column ul a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer-column ul a:hover {
+  text-decoration: underline;
+}
+
+.social-icons a img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  filter: brightness(0) invert(1);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #bbb;
+}
+
+
+/* General styles for header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffa500;
+  color: white;
+}
+
+.logo img {
+  height: 100px;
+  gap: 2px;
+}
+
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-bar input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 200px;
+}
+
+.search-bar button {
+  background-color: white;
+  color: #ffa500;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.search-bar button:hover {
+  background-color: #ffa500;
+  color: white;
+}
+
+/* Styles for authentication buttons */
+.auth-links {
+  display: flex;
+  gap: 10px;
+}
+
+.auth-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/*//////////////////////////////////////////////*88888888888888888888888888888888888888888888888888888888*/
+
+
+
+ul li a {
+  text-decoration: none;
+  font-weight: normal; /* Default font weight for all links */
+  color: #000; /* Default color for all links */
+}
+
+ul li a.active {
+  font-weight: bold; /* Make "Home" and "Seller" bold */
+  color: #333; /* Optional: Darker color for emphasis */
+}
